@@ -1,0 +1,8 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+<h1>Recherche d'un utilisateur - Examen NodeJs</h1>
+<form action="http://localhost:3000/users/search" method="post">
+    <input type="text" name="search" placeholder="Rechercher un utilisateur" />
+    <input type="submit" value="Rechercher" />
+{% endblock %}
